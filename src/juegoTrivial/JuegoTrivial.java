@@ -238,6 +238,35 @@ public class JuegoTrivial {
 			suma = suma - 5;
 			break;
 		}
+		//Pregunta 6
+		str = JOptionPane.showInputDialog("6. ¿En qué año se disolvió la Unión Soviética?"
+						+ "\n1 - En 1981." + "\n2 - En 1987." + "\n3 - En 1989." + "\n4 - En 1991.");
+		respuesta = Integer.parseInt(str); 
+
+		switch (respuesta) {
+		case 1:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLa Unión Soviética se disolvió oficialmente el 26 de diciembre de 1991 tras la firma del Tratado de Belavezha.");
+			suma = suma - 5;
+			break;
+		case 2:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLa Unión Soviética se disolvió oficialmente el 26 de diciembre de 1991 tras la firma del Tratado de Belavezha.");
+			suma = suma - 5;
+			break;
+		case 3:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLa Unión Soviética se disolvió oficialmente el 26 de diciembre de 1991 tras la firma del Tratado de Belavezha.");
+			suma = suma - 5;
+			break;
+		case 4:
+			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
+					+ "\nLa Unión Soviética se disolvió oficialmente el 26 de diciembre de 1991 tras la firma del Tratado de Belavezha.");
+			suma = suma + 10;
+			break;
+				
+				}
+		
 		
 		
 		System.out.println(
