@@ -203,8 +203,41 @@ public class JuegoTrivial {
 			suma = suma -5;
 			break;
 		}
-		
-		
+		//Pregunta 5
+		str = JOptionPane.showInputDialog("5. ¿Cuál es el nombre de la famosa batalla donde Napoleón Bonaparte due derrotado?"
+				+ "\n1 - Batalla de Stalingrado." + "\n2 - Battalla de Waterloo." + "\n3 - Batalla del Álamo." + "\n4 - Batalla de Hastings.");
+		respuesta = Integer.parseInt(str); 
+
+		switch (respuesta) {
+		case 1:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLa batalla de Waterloo tuvo lugar el 18 de junio de 1815 en las proximidades de Waterloo."
+					+ "\nEn ella, el ejército del Duque de Wellington venció al de Napoleón, sentenciando a este último"
+					+ "\na toda una vida en el exilio en la isla de Santa Elena.");
+			suma = suma - 5;
+			break;
+		case 2:
+			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
+					+ "\nLa batalla de Waterloo tuvo lugar el 18 de junio de 1815 en las proximidades de Waterloo."
+					+ "\nEn ella, el ejército del Duque de Wellington venció al de Napoleón, sentenciando a este último"
+					+ "\na toda una vida en el exilio en la isla de Santa Elena.");
+			suma = suma + 10;
+			break;
+		case 3:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLa batalla de Waterloo tuvo lugar el 18 de junio de 1815 en las proximidades de Waterloo."
+					+ "\nEn ella, el ejército del Duque de Wellington venció al de Napoleón, sentenciando a este último"
+					+ "\na toda una vida en el exilio en la isla de Santa Elena.");
+			suma = suma - 5;
+			break;
+		case 4:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLa batalla de Waterloo tuvo lugar el 18 de junio de 1815 en las proximidades de Waterloo."
+					+ "\nEn ella, el ejército del Duque de Wellington venció al de Napoleón, sentenciando a este último"
+					+ "\na toda una vida en el exilio en la isla de Santa Elena.");
+			suma = suma - 5;
+			break;
+		}
 		
 		
 		System.out.println(
