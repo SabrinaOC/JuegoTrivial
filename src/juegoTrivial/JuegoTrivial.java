@@ -8,9 +8,9 @@ public class JuegoTrivial {
 
 	public static void main(String[] args) {
 		
-		int cont = 0;
+		
 		int suma = 0;
-		int num;
+		int[] array = new int [10]; //Creamos array de 10 para recoger todas las preguntas
 		
 		System.out.println("¿Listo para poner a prueba tus conocimientos históricos?");
 		System.out.println(" \\ __\r\n"
@@ -50,28 +50,79 @@ public class JuegoTrivial {
 				+ "\ncada error te costará la friolera de 10 puntos, así que piensa bien antes de responder." 
 				+ "\nAl finalizar podrás ver tu contador total.");
 		
-		String str = JOptionPane.showInputDialog("¿Cuánto duró la Guerra de los 100 años?"
-				+ "\n1 - 106 años"
-				+ "\n2 - 116 años");
-		num = Integer.parseInt(str);
+		//Empezamos con la pregunta 1
+		String str = JOptionPane.showInputDialog("1. ¿Cuánto duró la Guerra de los 100 años?"
+				+ "\n1 - 106 años."
+				+ "\n2 - 116 años."
+				+ "\n3 - 100 años."
+				+ "\n4 - 102 años.");
+		array[0] = Integer.parseInt(str); //Colocamos el valor en la posición 0 del array
 		
-		switch (num) {
+		switch (array[0]) { //Usamos switch para mostrar las diferentes opciones
 		 
 			case 1:
-				System.out.println("Respuesta incorrecta... "
+				System.out.println("\nRespuesta incorrecta... "
 						+ " -5 pts  =´(");
 				suma = suma - 5;
 			break;
 			
 			case 2:
-				System.out.println("¡Respuesta correcta!"
+				System.out.println("\n¡Respuesta correcta!"
 						+ " ¡+10 pts! ");
 				suma = suma + 10;
+			break;
+			
+			case 3:
+				System.out.println("\nRespuesta incorrecta... "
+						+ " -5 pts  =´(");
+				suma = suma - 5;
+			break;
+			
+			case 4:
+				System.out.println("\nRespuesta incorrecta... "
+						+ " -5 pts  =´(");
+				suma = suma - 5;
+			break;
+				
 				
 		}
+		//Pregunta 2
+		str = JOptionPane.showInputDialog("2. ¿Qué líder tribal luchó contra la ocupación romana de Gran Bretaña (Britania)?"
+				+ "\n1 - Tácito."
+				+ "\n2 - Prasutagus."
+				+ "\n3 - Boudica."
+				+ "\n4 - Ariovistus.");
+		array[1] = Integer.parseInt(str);
 		
-		
+		switch (array[1]) {
+		 
+			case 1:
+				System.out.println("\nRespuesta incorrecta... "
+						+ " -5 pts  =´(");
+				suma = suma - 5;
+			break;
+			
+			case 2:
+				System.out.println("\nRespuesta incorrecta... "
+						+ " -5 pts  =´(");
+				suma = suma - 5;				
+			break;
+			
+			case 3:
+				System.out.println("\n¡Respuesta correcta!"
+						+ " ¡+10 pts! ");
+				suma = suma + 10;
+			break;
+			
+			case 4:
+				System.out.println("\nRespuesta incorrecta... "
+						+ " -5 pts  =´(");
+				suma = suma - 5;
+			break;
 	}
-	
-	
+	 System.out.println("\nTu puntuación final es..."
+	 		+ "\n..."
+	 		+ "\nredoble de tambores..."
+	 		+ " ¡"+ suma +"!");
+	}	
 }
