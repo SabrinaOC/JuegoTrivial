@@ -20,7 +20,7 @@ public class JuegoTrivial {
 	public static void main(String[] args) {
 
 		int suma = 0;
-		int[] array = new int[10];
+		int respuesta;
 
 		System.out.println("¿Listo para poner a prueba tus conocimientos históricos?");
 		System.out.println(" \\ __\r\n" + "--==/////////////[})))==*\r\n" + "                 / \\ '          ,|\r\n"
@@ -56,9 +56,9 @@ public class JuegoTrivial {
 
 		String str = JOptionPane.showInputDialog("¿Cuánto duró la Guerra de los 100 años?" + "\n1 - 106 años"
 				+ "\n2 - 116 años" + "\n3 - 100 años." + "\n4 - 102 años.");
-		array[0] = Integer.parseInt(str);
+		respuesta = Integer.parseInt(str); // Guardamos elección en la variable respuesta
 
-		switch (array[0]) {
+		switch (respuesta) { //Usamos un switch para poder avanzar en el juego tras seleccionar respuesta
 
 		case 1:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
@@ -85,13 +85,12 @@ public class JuegoTrivial {
 			break;
 
 		}
-		// Pregunta 2
-		str = JOptionPane
-				.showInputDialog("2. ¿Qué líder tribal luchó contra la ocupación romana de Gran Bretaña (Britania)?"
+		// Pregunta 2. De aquí en adelante usaremos siempre la misma estructura para presentar opciones y que siga el juego
+		str = JOptionPane.showInputDialog("2. ¿Qué líder tribal luchó contra la ocupación romana de Gran Bretaña (Britania)?"
 						+ "\n1 - Tácito." + "\n2 - Prasutagus." + "\n3 - Boudica." + "\n4 - Ariovistus.");
-		array[1] = Integer.parseInt(str); // Guardamos elección en índice 2 del array
+		respuesta = Integer.parseInt(str); 
 
-		switch (array[1]) {
+		switch (respuesta) {
 
 		case 1:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
@@ -125,13 +124,12 @@ public class JuegoTrivial {
 			suma = suma - 5;
 			break;
 		}
-
-		str = JOptionPane.showInputDialog(
-				"3. ¿Qué emperador romano legalizó el cristianismo y puso fin a la persecusión de los cristianos?"
+		//Pregunta 3
+		str = JOptionPane.showInputDialog("3. ¿Qué emperador romano legalizó el cristianismo y puso fin a la persecusión de los cristianos?"
 						+ "\n1 - Nerón." + "\n2 - Adriano." + "\n3 - Trajano." + "\n4 - Constantino.");
-		array[2] = Integer.parseInt(str); // Guardamos elección en índice 3 del array
+		respuesta = Integer.parseInt(str); 
 
-		switch (array[2]) {
+		switch (respuesta) {
 		case 1:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
 					+ "\nAl emperador Constantino también se le atribuye haber hecho de la antigua Bizancio, ahora Estambul, una ciudad próspera."
@@ -158,10 +156,57 @@ public class JuegoTrivial {
 					+ "\nAl emperador Constantino también se le atribuye haber hecho de la antigua Bizancio, ahora Estambul, una ciudad próspera."
 					+ "\nNo forma parte de los Cinco Emperadores Buenos del Imperio Romano (que fueron Adriano, Trajano, Nerva,"
 					+ "\nAntonio Pío y Marco Aurelio), pues durante su reinado el Imperio alcanzó su máxima expansión");
-			suma = suma - 5;
+			suma = suma + 10;
 			break;
 		}
 
+		//Pregunta 4
+		str = JOptionPane.showInputDialog("4. ¿Cuántas personas murieron durante el Gran Incendio de Londres de 1666, según los registros?"
+				+ "\n1 - 6." + "\n2 - 60." + "\n3 - 600." + "\n4 - 6 000.");
+		respuesta = Integer.parseInt(str); 
+
+		switch (respuesta) {
+		case 1:
+			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
+					+ "\nEsta catástrofe provocó la destrucción de parte de la ciudad de Londres desde el 2 hasta el 5 de septiembre de 1666."
+					+ "\nEl fuego destruyó el centro de la ciudad medieval dentro de la vieja muralla romana de Londres."
+					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
+					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
+					+ "\nLa cifra real fue con toda probabilidad muy superior.");
+			suma = suma +10;
+			break;
+		case 2:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nEsta catástrofe provocó la destrucción de parte de la ciudad de Londres desde el 2 hasta el 5 de septiembre de 1666."
+					+ "\nEl fuego destruyó el centro de la ciudad medieval dentro de la vieja muralla romana de Londres."
+					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
+					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
+					+ "\nLa cifra real fue con toda probabilidad muy superior.");
+			suma = suma -5;
+			break;
+		case 3:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nEsta catástrofe provocó la destrucción de parte de la ciudad de Londres desde el 2 hasta el 5 de septiembre de 1666."
+					+ "\nEl fuego destruyó el centro de la ciudad medieval dentro de la vieja muralla romana de Londres."
+					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
+					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
+					+ "\nLa cifra real fue con toda probabilidad muy superior.");
+			suma = suma -5;
+			break;
+		case 4:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nEsta catástrofe provocó la destrucción de parte de la ciudad de Londres desde el 2 hasta el 5 de septiembre de 1666."
+					+ "\nEl fuego destruyó el centro de la ciudad medieval dentro de la vieja muralla romana de Londres."
+					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
+					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
+					+ "\nLa cifra real fue con toda probabilidad muy superior.");
+			suma = suma -5;
+			break;
+		}
+		
+		
+		
+		
 		System.out.println(
 				"\n" + "\nTu puntuación final es..." + "\n..." + "\nredoble de tambores..." + " ¡" + suma + "!");
 
