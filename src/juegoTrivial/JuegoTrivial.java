@@ -266,6 +266,43 @@ public class JuegoTrivial {
 			break;
 				
 				}
+		//Pregunta 7
+		str = JOptionPane.showInputDialog("7. ¿Qué científico es considerado el padre de la Bomba Atómica?"
+								+ "\n1 - Jonas Salk." + "\n2 - Albert Einstein." + "\n3 - Robert Oppenheimer." + "\n4 - Leó Szilárd.");
+		respuesta = Integer.parseInt(str); 
+
+		switch (respuesta) {
+		case 1:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
+					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
+					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
+			suma = suma -5;
+			break;
+		case 2:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
+					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
+					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
+			suma = suma -5;
+			break;
+		case 3:
+			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
+					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
+					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
+					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
+			suma = suma +10;
+			break;
+		case 4:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
+					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
+					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
+			suma = suma -5;
+			break;
+			}
+		
+		
 		
 		
 		
