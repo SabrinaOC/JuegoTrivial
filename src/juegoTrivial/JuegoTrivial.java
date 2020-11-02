@@ -23,7 +23,18 @@ public class JuegoTrivial {
 		int respuesta;
 
 		System.out.println("¿Listo para poner a prueba tus conocimientos históricos?");
-		System.out.println(" \\ __\r\n" + "--==/////////////[})))==*\r\n" + "                 / \\ '          ,|\r\n"
+		System.out.println("\n" + "\r\n"
+	         + " __ __  ____ _____ ______   ___   ____   __ __      ______  ____   ____  __ __  ____   ____ \r\n"
+	         + "|  |  ||    / ___/|      | /   \\ |    \\ |  |  |    |      ||    \\ |    ||  |  ||    | /    |\r\n"
+			 + "|  |  | |  (   \\_ |      ||     ||  D  )|  |  |    |      ||  D  ) |  | |  |  | |  | |  o  |\r\n"
+			 + "|  _  | |  |\\__  ||_|  |_||  O  ||    / |  ~  |    |_|  |_||    /  |  | |  |  | |  | |     |\r\n"
+			 + "|  |  | |  |/  \\ |  |  |  |     ||    \\ |___, |      |  |  |    \\  |  | |  :  | |  | |  _  |\r\n"
+			 + "|  |  | |  |\\    |  |  |  |     ||  .  \\|     |      |  |  |  .  \\ |  |  \\   /  |  | |  |  |\r\n"
+			 + "|__|__||____|\\___|  |__|   \\___/ |__|\\_||____/       |__|  |__|\\_||____|  \\_/  |____||__|__|\r\n"
+			 + "                                                                                            \r\n"
+			 + "");
+		System.out.println("\n");
+		System.out.println(" \n\\ __\r\n" + "--==/////////////[})))==*\r\n" + "                 / \\ '          ,|\r\n"
 				+ "                    `\\`\\      //|                             ,|\r\n"
 				+ "                      \\ `\\  //,/'                           -~ |\r\n"
 				+ "   )             _-~~~\\  |/ / |'|                       _-~  / ,\r\n"
@@ -58,7 +69,7 @@ public class JuegoTrivial {
 				+ "\n2 - 116 años" + "\n3 - 100 años." + "\n4 - 102 años.");
 		respuesta = Integer.parseInt(str); // Guardamos elección en la variable respuesta
 
-		switch (respuesta) { //Usamos un switch para poder avanzar en el juego tras seleccionar respuesta
+		switch (respuesta) { // Usamos un switch para poder avanzar en el juego tras seleccionar respuesta
 
 		case 1:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
@@ -85,10 +96,12 @@ public class JuegoTrivial {
 			break;
 
 		}
-		// Pregunta 2. De aquí en adelante usaremos siempre la misma estructura para presentar opciones y que siga el juego
-		str = JOptionPane.showInputDialog("2. ¿Qué líder tribal luchó contra la ocupación romana de Gran Bretaña (Britania)?"
+		// Pregunta 2. De aquí en adelante usaremos siempre la misma estructura para
+		// presentar opciones y que siga el juego
+		str = JOptionPane
+				.showInputDialog("2. ¿Qué líder tribal luchó contra la ocupación romana de Gran Bretaña (Britania)?"
 						+ "\n1 - Tácito." + "\n2 - Prasutagus." + "\n3 - Boudica." + "\n4 - Ariovistus.");
-		respuesta = Integer.parseInt(str); 
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
 
@@ -124,10 +137,11 @@ public class JuegoTrivial {
 			suma = suma - 5;
 			break;
 		}
-		//Pregunta 3
-		str = JOptionPane.showInputDialog("3. ¿Qué emperador romano legalizó el cristianismo y puso fin a la persecusión de los cristianos?"
+		// Pregunta 3
+		str = JOptionPane.showInputDialog(
+				"3. ¿Qué emperador romano legalizó el cristianismo y puso fin a la persecusión de los cristianos?"
 						+ "\n1 - Nerón." + "\n2 - Adriano." + "\n3 - Trajano." + "\n4 - Constantino.");
-		respuesta = Integer.parseInt(str); 
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
 		case 1:
@@ -160,10 +174,11 @@ public class JuegoTrivial {
 			break;
 		}
 
-		//Pregunta 4
-		str = JOptionPane.showInputDialog("4. ¿Cuántas personas murieron durante el Gran Incendio de Londres de 1666, según los registros?"
-				+ "\n1 - 6." + "\n2 - 60." + "\n3 - 600." + "\n4 - 6 000.");
-		respuesta = Integer.parseInt(str); 
+		// Pregunta 4
+		str = JOptionPane.showInputDialog(
+				"4. ¿Cuántas personas murieron durante el Gran Incendio de Londres de 1666, según los registros?"
+						+ "\n1 - 6." + "\n2 - 60." + "\n3 - 600." + "\n4 - 6 000.");
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
 		case 1:
@@ -173,7 +188,7 @@ public class JuegoTrivial {
 					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
 					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
 					+ "\nLa cifra real fue con toda probabilidad muy superior.");
-			suma = suma +10;
+			suma = suma + 10;
 			break;
 		case 2:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
@@ -182,7 +197,7 @@ public class JuegoTrivial {
 					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
 					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
 					+ "\nLa cifra real fue con toda probabilidad muy superior.");
-			suma = suma -5;
+			suma = suma - 5;
 			break;
 		case 3:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
@@ -191,7 +206,7 @@ public class JuegoTrivial {
 					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
 					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
 					+ "\nLa cifra real fue con toda probabilidad muy superior.");
-			suma = suma -5;
+			suma = suma - 5;
 			break;
 		case 4:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
@@ -200,13 +215,15 @@ public class JuegoTrivial {
 					+ "\nLos registros apenas hablan de 6 personas fallecidas en el incendio, pero hay que dejar constancia de que las muertes"
 					+ "\nde las personas con pocos posibles o de clase media no fueron registradas."
 					+ "\nLa cifra real fue con toda probabilidad muy superior.");
-			suma = suma -5;
+			suma = suma - 5;
 			break;
 		}
-		//Pregunta 5
-		str = JOptionPane.showInputDialog("5. ¿Cuál es el nombre de la famosa batalla donde Napoleón Bonaparte due derrotado?"
-				+ "\n1 - Batalla de Stalingrado." + "\n2 - Battalla de Waterloo." + "\n3 - Batalla del Álamo." + "\n4 - Batalla de Hastings.");
-		respuesta = Integer.parseInt(str); 
+		// Pregunta 5
+		str = JOptionPane
+				.showInputDialog("5. ¿Cuál es el nombre de la famosa batalla donde Napoleón Bonaparte due derrotado?"
+						+ "\n1 - Batalla de Stalingrado." + "\n2 - Battalla de Waterloo." + "\n3 - Batalla del Álamo."
+						+ "\n4 - Batalla de Hastings.");
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
 		case 1:
@@ -238,10 +255,10 @@ public class JuegoTrivial {
 			suma = suma - 5;
 			break;
 		}
-		//Pregunta 6
-		str = JOptionPane.showInputDialog("6. ¿En qué año se disolvió la Unión Soviética?"
-						+ "\n1 - En 1981." + "\n2 - En 1987." + "\n3 - En 1989." + "\n4 - En 1991.");
-		respuesta = Integer.parseInt(str); 
+		// Pregunta 6
+		str = JOptionPane.showInputDialog("6. ¿En qué año se disolvió la Unión Soviética?" + "\n1 - En 1981."
+				+ "\n2 - En 1987." + "\n3 - En 1989." + "\n4 - En 1991.");
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
 		case 1:
@@ -264,12 +281,12 @@ public class JuegoTrivial {
 					+ "\nLa Unión Soviética se disolvió oficialmente el 26 de diciembre de 1991 tras la firma del Tratado de Belavezha.");
 			suma = suma + 10;
 			break;
-				
-				}
-		//Pregunta 7
+
+		}
+		// Pregunta 7
 		str = JOptionPane.showInputDialog("7. ¿Qué científico es considerado el padre de la Bomba Atómica?"
-								+ "\n1 - Jonas Salk." + "\n2 - Albert Einstein." + "\n3 - Robert Oppenheimer." + "\n4 - Leó Szilárd.");
-		respuesta = Integer.parseInt(str); 
+				+ "\n1 - Jonas Salk." + "\n2 - Albert Einstein." + "\n3 - Robert Oppenheimer." + "\n4 - Leó Szilárd.");
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
 		case 1:
@@ -277,34 +294,35 @@ public class JuegoTrivial {
 					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
 					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
 					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
-			suma = suma -5;
+			suma = suma - 5;
 			break;
 		case 2:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
 					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
 					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
 					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
-			suma = suma -5;
+			suma = suma - 5;
 			break;
 		case 3:
 			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
 					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
 					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
 					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
-			suma = suma +10;
+			suma = suma + 10;
 			break;
 		case 4:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
 					+ "\nRobert Oppenheimer fue uno de los padres de la bomba atómica, el director del Proyecto Manhattan."
 					+ "\nSe dice que cuando logró crear el explosivo murmuró “Yo soy la muerte, soy la destrucción”."
 					+ "\nPor su parte, Léo Szilárd solicitó (y se le otorgó) la patente de la bomba atómica.");
-			suma = suma -5;
+			suma = suma - 5;
 			break;
-			}
-		//Pregunta 8
-		str = JOptionPane.showInputDialog("8. ¿Con qué nombre se conoce el escándalo que obligó al presidente Richard Nixon a dimitir?"
-										+ "\n1 - Vietnam." + "\n2 - Powergate." + "\n3 - Nixon Process." + "\n4 - Watergate.");
-			respuesta = Integer.parseInt(str); 
+		}
+		// Pregunta 8
+		str = JOptionPane.showInputDialog(
+				"8. ¿Con qué nombre se conoce el escándalo que obligó al presidente Richard Nixon a dimitir?"
+						+ "\n1 - Vietnam." + "\n2 - Powergate." + "\n3 - Nixon Process." + "\n4 - Watergate.");
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
 		case 1:
@@ -336,13 +354,13 @@ public class JuegoTrivial {
 			suma = suma + 10;
 			break;
 		}
-		//Pregunta 9
-		str = JOptionPane.showInputDialog("9. ¿Qué civilización prehispánica adoró al dios Kukulkán?"
-												+ "\n1 - Incas." + "\n2 - Mayas." + "\n3 - Mapuche." + "\n4 - Inuit.");
-				respuesta = Integer.parseInt(str); 
+		// Pregunta 9
+		str = JOptionPane.showInputDialog("9. ¿Qué civilización prehispánica adoró al dios Kukulkán?" + "\n1 - Incas."
+				+ "\n2 - Mayas." + "\n3 - Mapuche." + "\n4 - Inuit.");
+		respuesta = Integer.parseInt(str);
 
 		switch (respuesta) {
-		case 1: 
+		case 1:
 			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
 					+ "\nKukulcán es un dios muy importante para las diferentes poblaciones indígenas de Mesoamérica."
 					+ "\nRepresenta el dios creador de los mayas y tiene similitudes con la Serpiente Emplumada.");
@@ -367,11 +385,53 @@ public class JuegoTrivial {
 			suma = suma - 5;
 			break;
 		}
-		
-		
-		
-		System.out.println(
-				"\n" + "\nTu puntuación final es..." + "\n..." + "\nredoble de tambores..." + " ¡" + suma + "!");
+		// Pregunta 10
+		str = JOptionPane.showInputDialog("10. ¿Qué esposas de Enrique VII fueron decapitadas?"
+				+ "\n1 - Ana Bolena y Catherine Howard." + "\n2 - Ana de Cléveris y Ana Bolena."
+				+ "\n3 - Ana Bolena y Catalina de Aragón." + "\n4 - Catalina Howard y Catalina Parr.");
+		respuesta = Integer.parseInt(str);
+
+		switch (respuesta) {
+		case 1:
+			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
+					+ "\nLas esposas decapitadas fueron Ana Bolena y Catalina Howard."
+					+ "\nEl 19 de mayo de 1536 Ana Bolena fue ejecutada en el patíbulo, acusada de adulterio."
+					+ "\nLa misma suerte corrió Catalina Howard el 13 de febrero de 1542.");
+			suma = suma + 10;
+			break;
+		case 2:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLas esposas decapitadas fueron Ana Bolena y Catalina Howard."
+					+ "\nEl 19 de mayo de 1536 Ana Bolena fue ejecutada en el patíbulo, acusada de adulterio."
+					+ "\nLa misma suerte corrió Catalina Howard el 13 de febrero de 1542.");
+			suma = suma - 5;
+			break;
+		case 3:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLas esposas decapitadas fueron Ana Bolena y Catalina Howard."
+					+ "\nEl 19 de mayo de 1536 Ana Bolena fue ejecutada en el patíbulo, acusada de adulterio."
+					+ "\nLa misma suerte corrió Catalina Howard el 13 de febrero de 1542.");
+			suma = suma - 5;
+			break;
+		case 4:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nLas esposas decapitadas fueron Ana Bolena y Catalina Howard."
+					+ "\nEl 19 de mayo de 1536 Ana Bolena fue ejecutada en el patíbulo, acusada de adulterio."
+					+ "\nLa misma suerte corrió Catalina Howard el 13 de febrero de 1542.");
+			suma = suma - 5;
+			break;
+		}
+
+		System.out.println("\n" + "\n" + "\r\n" + " _____                        _____                \r\n"
+				+ "|  __ \\                      |  _  |               \r\n"
+				+ "| |  \\/ __ _ _ __ ___   ___  | | | |_   _____ _ __ \r\n"
+				+ "| | __ / _` | '_ ` _ \\ / _ \\ | | | \\ \\ / / _ \\ '__|\r\n"
+				+ "| |_\\ \\ (_| | | | | | |  __/ \\ \\_/ /\\ V /  __/ |   \r\n"
+				+ " \\____/\\__,_|_| |_| |_|\\___|  \\___/  \\_/ \\___|_|   \r\n"
+				+ "                                                   \r\n"
+				+ "                                                   \r\n" + "" + "\n");
+		System.out.println("\n" + "\nTu puntuación final es..." + "\n..." + "\n..." + "\nredoble de tambores..." + " ¡"
+				+ suma + "!");
 
 	}
 }
