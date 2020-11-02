@@ -336,7 +336,37 @@ public class JuegoTrivial {
 			suma = suma + 10;
 			break;
 		}
-		
+		//Pregunta 9
+		str = JOptionPane.showInputDialog("9. ¿Qué civilización prehispánica adoró al dios Kukulkán?"
+												+ "\n1 - Incas." + "\n2 - Mayas." + "\n3 - Mapuche." + "\n4 - Inuit.");
+				respuesta = Integer.parseInt(str); 
+
+		switch (respuesta) {
+		case 1: 
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nKukulcán es un dios muy importante para las diferentes poblaciones indígenas de Mesoamérica."
+					+ "\nRepresenta el dios creador de los mayas y tiene similitudes con la Serpiente Emplumada.");
+			suma = suma - 5;
+			break;
+		case 2:
+			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
+					+ "\nKukulcán es un dios muy importante para las diferentes poblaciones indígenas de Mesoamérica."
+					+ "\nRepresenta el dios creador de los mayas y tiene similitudes con la Serpiente Emplumada.");
+			suma = suma + 10;
+			break;
+		case 3:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nKukulcán es un dios muy importante para las diferentes poblaciones indígenas de Mesoamérica."
+					+ "\nRepresenta el dios creador de los mayas y tiene similitudes con la Serpiente Emplumada.");
+			suma = suma - 5;
+			break;
+		case 4:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nKukulcán es un dios muy importante para las diferentes poblaciones indígenas de Mesoamérica."
+					+ "\nRepresenta el dios creador de los mayas y tiene similitudes con la Serpiente Emplumada.");
+			suma = suma - 5;
+			break;
+		}
 		
 		
 		
