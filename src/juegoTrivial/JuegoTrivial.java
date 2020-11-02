@@ -301,7 +301,41 @@ public class JuegoTrivial {
 			suma = suma -5;
 			break;
 			}
-		
+		//Pregunta 8
+		str = JOptionPane.showInputDialog("8. ¿Con qué nombre se conoce el escándalo que obligó al presidente Richard Nixon a dimitir?"
+										+ "\n1 - Vietnam." + "\n2 - Powergate." + "\n3 - Nixon Process." + "\n4 - Watergate.");
+			respuesta = Integer.parseInt(str); 
+
+		switch (respuesta) {
+		case 1:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nHasta el momento, sigue siendo el único presidente de los Estados Unidos en renunciar a su cargo. "
+					+ "\nEl escándalo Watergate, destapado por los jóvenes Bob Woodward y Carl Bernstein, inspiró a muchos periodistas."
+					+ "\nSu investigación fue galardonada con un Premio Pulitzer.");
+			suma = suma - 5;
+			break;
+		case 2:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nHasta el momento, sigue siendo el único presidente de los Estados Unidos en renunciar a su cargo. "
+					+ "\nEl escándalo Watergate, destapado por los jóvenes Bob Woodward y Carl Bernstein, inspiró a muchos periodistas."
+					+ "\nSu investigación fue galardonada con un Premio Pulitzer.");
+			suma = suma - 5;
+			break;
+		case 3:
+			System.out.println("\nRespuesta incorrecta... " + " -5 pts  =´("
+					+ "\nHasta el momento, sigue siendo el único presidente de los Estados Unidos en renunciar a su cargo. "
+					+ "\nEl escándalo Watergate, destapado por los jóvenes Bob Woodward y Carl Bernstein, inspiró a muchos periodistas."
+					+ "\nSu investigación fue galardonada con un Premio Pulitzer.");
+			suma = suma - 5;
+			break;
+		case 4:
+			System.out.println("\nRespuesta correcta!" + " ¡+10 pts!"
+					+ "\nHasta el momento, sigue siendo el único presidente de los Estados Unidos en renunciar a su cargo. "
+					+ "\nEl escándalo Watergate, destapado por los jóvenes Bob Woodward y Carl Bernstein, inspiró a muchos periodistas."
+					+ "\nSu investigación fue galardonada con un Premio Pulitzer.");
+			suma = suma + 10;
+			break;
+		}
 		
 		
 		
