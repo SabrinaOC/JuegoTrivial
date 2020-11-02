@@ -6,3 +6,6 @@ Cada acierto sumará 10 puntos a tu contador y cada fallo restará 5 puntos del 
 Además, al ser un juego educativo, independientemente de si la respuesta es acertada o no, se mostrará la opción correcta y una breve explicación de la misma.
 
 Ahora que ya sabes todo lo necesario, ¡a jugar!
+
+<p align="center">
+  <img width="475" height="300" src="./media/history-books.jpg"/>
