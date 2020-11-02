@@ -8,4 +8,4 @@ Además, al ser un juego educativo, independientemente de si la respuesta es ace
 Ahora que ya sabes todo lo necesario, ¡a jugar!
 
 <p align="center">
-  <img width="475" height="300" src="./media/history-books.jpg"/>
+  <img width="475" height="300" src=".src/media/history-books.jpg"/>
